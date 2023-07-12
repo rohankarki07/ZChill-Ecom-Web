@@ -1,0 +1,103 @@
+#content-wrapper{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.column{
+	width: 600px;
+	padding: 10px;
+
+}
+.column .main-img{
+    width: 50%;
+}
+#featured{
+	max-width: 500px;
+	max-height: 600px;
+	object-fit: cover;
+	cursor: pointer;
+	border: 2px solid black;
+
+}
+
+.thumbnail{
+	object-fit: cover;
+	max-width: 180px;
+	max-height: 100px;
+	cursor: pointer;
+	opacity: 0.5;
+	margin: 5px;
+	border: 2px solid black;
+
+}
+
+
+
+
+/* item count  */
+.final{
+    display: flex;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.column input{
+    height: 1.7rem;
+    width: 2.5rem;
+}
+
+.column h1{
+  font-family: monospace;
+  font-size: 4rem;
+}
+
+.column .stock img{
+  width: 5%;
+}
+
+.column .stock{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.column p{
+  font-size: 1.1rem;
+}
+
+
+
+/* Add to cart  button starts  */
+.column button {
+   text-align: center;
+   display: inline-block;
+   padding: 1rem 2rem;
+   background-color: #a6cdde;
+   cursor: pointer;
+   letter-spacing: 0.2rem;
+   position:relative;
+   overflow:hidden;
+   margin-left: 1rem;
+   border: none;
+
+ }
+ 
+
+ .column button:before {
+   content: "";
+   position: absolute;
+   height: 100%;
+   width: 0;
+   background : #fff;
+   left: 0;
+   bottom: 0;
+   transition: all .3s;
+   opacity: 0.3;
+ }
+ 
+ .column button:hover:before {
+   width: 100%;
+ }
+
+/*  Add to cart button ends  */
